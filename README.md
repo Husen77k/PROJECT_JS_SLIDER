@@ -26,7 +26,7 @@ The slider features characters and promotional artwork inspired by GTA VI.
 
 <div align="center">
 
-| Official Cover Art | Jason & Lucia |
+| Jason & Lucia | Brian Heder |
 |:---:|:---:|
 | <img src="outputs/Jason&Lucia.png" width="350" alt="GTA VI Cover Artwork"> | <img src="outputs/brian.png" width="350" alt="Jason and Lucia"> |
 
