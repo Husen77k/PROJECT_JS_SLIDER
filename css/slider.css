@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:  #151428;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: Cambria, Georgia, serif;
+    text-align: center;
+    font-size: clamp(40px, 6vw, 75px);
+    font-weight: 900;
+    letter-spacing: 8px;
+    margin: 35px 0;
+    color: whitesmoke;
+    text-transform: uppercase;
+    text-shadow: 0 0 20px rgba(255, 171, 0, 0.6);
+}
+h1:hover{
+  text-shadow: 0 0 20px rgba(255, 171, 0, 0.8);
+}
+
+.slider {
+    position: relative;
+    width: 94%;
+    max-width: 1450px;
+    height: clamp(420px, 75vh, 780px);
+    margin: 20px auto 50px;
+    border-radius: 18px;
+    overflow: hidden;
+    background-color: #151515;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6);
+    
+}
+
+
+.slide {
+    width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.slider::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(0, 0, 0, 0.4) 35%,
+        transparent 75%
+    );
+    pointer-events: none;
+}
+
+.current-caption {
+    position: absolute;
+    z-index: 2;
+    bottom: 55px;
+    left: 7%;
+    right: 7%;
+    text-align: left;
+}
+
+.current-caption h3 {
+    font-family: Cambria, Georgia, serif;
+    font-size: clamp(30px, 5vw, 58px);
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 12px;
+    text-shadow: 0 3px 12px rgba(0, 0, 0, 0.7);
+}
+
+.current-caption p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(14px, 1.5vw, 19px);
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 750px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+
+.buttons {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+    pointer-events: none;
+}
+
+.buttons button {
+    width: 52px;
+    height: 52px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 50%;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    color: white;
+    font-size: 19px;
+    transition: all 0.3s ease;
+    pointer-events: auto;
+}
+
+.buttons button:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.12);
+}
+
+.buttons button:active {
+    transform: scale(0.95);
+}
+
+.buttons button:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 4px;
+}
+
+
+.fade-in {
+    animation: fadeIn 0.98s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.6;
+        transform: scale(1.02);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
