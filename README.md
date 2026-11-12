@@ -20,20 +20,6 @@ The project showcases characters through a cinematic image slider with smooth tr
 
 It was built using **HTML, CSS, and Vanilla JavaScript**, focusing on DOM manipulation, event handling, arrays, objects, and timing functions.
 
-## 🎬 Project Demo
-
-See **Welcome to Vice** in action!
-
-A quick demonstration of the interactive GTA VI image slider, featuring automatic transitions, navigation controls, hover-to-pause functionality, and smooth animations.
-
-<div align="center">
-
-▶️ **[WATCH PROJECT DEMO](outputs/project-demo.mp4)**
-
-</div>
-
-> The video is included in the `outputs` folder. Click the link to view it.
-
 ## 🖼️ Character Gallery
 
 The slider features characters and promotional artwork inspired by GTA VI.
@@ -167,14 +153,3 @@ Grand Theft Auto VI and its related characters, artwork, and trademarks belong t
 This project is not affiliated with, endorsed by, or associated with Rockstar Games.
 
 ---
-
-<div align="center">
-
-### 🌴 WELCOME TO VICE
-
-**Built with HTML, CSS & JavaScript.**
-
-</div>
-
-https://github.com/user-attachments/assets/095909e6-0f5f-4330-b0f6-d21c6ef594ef
-
